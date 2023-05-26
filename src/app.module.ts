@@ -21,7 +21,7 @@ import { Order } from './OrdersModule/models/order';
       host: '31.220.60.102',
       port: 3306,
       username: 'root',
-      password: 'Riverplate@2023',
+      password: 'bbe7e84e0a55d7432e720b6635bf784aa443f899b805262d',
       database: 'prueba',
       dialect: 'mariadb',
       synchronize: true,
