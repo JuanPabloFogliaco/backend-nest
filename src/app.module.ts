@@ -18,10 +18,10 @@ import { Order } from './OrdersModule/models/order';
 @Module({
   imports: [
     SequelizeModule.forRoot({
-      host: '127.0.0.1',
+      host: '31.220.60.102',
       port: 3306,
       username: 'root',
-      password: 'Riverplate.anu',
+      password: 'Riverplate@2023',
       database: 'prueba',
       dialect: 'mysql',
       synchronize: true,
