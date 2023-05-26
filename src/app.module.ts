@@ -23,7 +23,7 @@ import { Order } from './OrdersModule/models/order';
       username: 'root',
       password: 'Riverplate@2023',
       database: 'prueba',
-      dialect: 'mysql',
+      dialect: 'mariadb',
       synchronize: true,
       autoLoadModels: true,
     }),
