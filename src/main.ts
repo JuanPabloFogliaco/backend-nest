@@ -4,8 +4,8 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-
-  await app.use(cors({ origin: 'http://31.220.60.102:3000' }));
+  const apiUrl = process.env.NEST_PUBLIC_API_URL_FRONT_DEV;
+  await app.use(cors({ origin: apiUrl }));
   await app.listen(8080);
 }
 bootstrap();
