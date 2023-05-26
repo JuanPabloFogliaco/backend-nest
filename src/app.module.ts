@@ -19,7 +19,7 @@ import { Order } from './OrdersModule/models/order';
   imports: [
     SequelizeModule.forRoot({
       host: '31.220.60.102',
-      port: 8090,
+      port: 3306,
       username: 'root',
       password: 'bbe7e84e0a55d7432e720b6635bf784aa443f899b805262d',
       database: 'prueba',
