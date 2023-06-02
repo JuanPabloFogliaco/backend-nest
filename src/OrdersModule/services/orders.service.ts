@@ -43,7 +43,7 @@ export class OrdersService {
         console.log(product.stock);
         if (e.count > product.stock)
           throw new HttpException(
-            'No hay stock disponible para el producto' + product.name,
+            'No hay stock disponible para el producto ' + product.name + '.',
             HttpStatus.NOT_FOUND,
           );
 

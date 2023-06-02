@@ -9,7 +9,7 @@ import { AuthModule } from './AuthModule/auth.module';
 import { User } from './AuthModule/models/user';
 import { authMiddleware } from './middlewares/auth.middleware';
 import { UserModule } from './UserModule/user.module';
-import { BudsModule } from './ProductsModule/products.module';
+import { ProductModule } from './ProductsModule/products.module';
 import { Product } from './ProductsModule/models/products';
 import { OrderModule } from './OrdersModule/orders.module';
 import { OrderItem } from './OrdersModule/models/orderItems';
@@ -31,7 +31,7 @@ import { Order } from './OrdersModule/models/order';
     AuthModule,
     UserModule,
     OrderModule,
-    BudsModule,
+    ProductModule,
   ],
 })
 export class AppModule implements NestModule {

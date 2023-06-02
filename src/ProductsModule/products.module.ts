@@ -4,8 +4,8 @@ import { Module } from '@nestjs/common';
 import { JwtModule } from '@nestjs/jwt';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { Product } from './models/products';
-import { BudsService } from './services/products.service';
-import { BudsController } from './controllers/products.controller';
+import { ProductsService } from './services/products.service';
+import { ProductsController } from './controllers/products.controller';
 
 @Module({
   imports: [
@@ -15,8 +15,8 @@ import { BudsController } from './controllers/products.controller';
       signOptions: { expiresIn: '5m' },
     }),
   ],
-  controllers: [BudsController],
-  providers: [BudsService],
-  exports: [BudsService],
+  controllers: [ProductsController],
+  providers: [ProductsService],
+  exports: [ProductsService],
 })
-export class BudsModule {}
+export class ProductModule {}

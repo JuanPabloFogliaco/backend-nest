@@ -1,12 +1,12 @@
 import { Controller, Get } from '@nestjs/common';
-import { BudsService } from '../services/products.service';
+import { ProductsService } from '../services/products.service';
 
-@Controller('buds')
-export class BudsController {
-  constructor(private readonly budsService: BudsService) {}
+@Controller('products')
+export class ProductsController {
+  constructor(private readonly productsService: ProductsService) {}
 
   @Get('/')
-  async FindAllBuds() {
-    return this.budsService.findAllBuds();
+  async FindAllProducts() {
+    return this.productsService.findAllBuds();
   }
 }
