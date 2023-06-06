@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { Product } from '../models/products';
 
 @Injectable()
-export class BudsService {
+export class ProductsService {
   async findAllBuds() {
     const buds = await Product.findAll();
     return buds;
