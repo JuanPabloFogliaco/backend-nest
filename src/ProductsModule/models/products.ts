@@ -25,4 +25,10 @@ export class Product extends Model<Product> {
     allowNull: false,
   })
   stock: number;
+
+  @Column({
+    type: DataType.STRING,
+    allowNull: false,
+  })
+  urlImg: string;
 }
